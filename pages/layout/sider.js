@@ -43,9 +43,6 @@ function SiderMain({ styles }) {
 
   return (
     <>
-      {/* <div className={clsx(styles.sider_icon)}>
-        <MenuOutlined />
-      </div> */}
       <Sider width={200} theme="dark" className={clsx(styles.sider)}>
         <Menu
           mode="inline"
