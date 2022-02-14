@@ -20,10 +20,12 @@ export default function Home() {
       <Layout>
         <SiderMain styles={styles} />
         <Layout className={clsx(styles.layout)}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-          </Breadcrumb>
+          <div className={clsx(styles.layoutItem)}>
+            <Breadcrumb style={{ margin: "16px 0" }}>
+              <Breadcrumb.Item>Home</Breadcrumb.Item>
+              <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
           <Content className={clsx(styles.content_body)}>
             <div className={clsx(styles.content_body_item)}>
               <Image

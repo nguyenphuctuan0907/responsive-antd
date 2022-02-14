@@ -83,21 +83,21 @@ function SiderMain({ styles }) {
           <Button
             type="primary"
             onClick={showDrawer}
-            styles={{ margin: "10px" }}
+            style={{ margin: "10px" }}
           >
             <MenuOutlined />
           </Button>
         </Space>
       </div>
       <Drawer
-        // title="Basic Drawer"
         placement={"left"}
         closable={false}
-        width={200}
+        width={248}
         onClose={onClose}
         visible={visibleDrawer.visible}
         key={visibleDrawer.placement}
-        styles={{ padding: 0 }}
+        style={{ padding: 0 }}
+        title="Ant design"
       >
         <Sider width={200} theme="dark">
           <Menu

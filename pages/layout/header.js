@@ -3,7 +3,11 @@ import { Layout } from "antd";
 import clsx from "clsx";
 
 import { Menu, Typography, Avatar, Dropdown, Space, message } from "antd";
-import { UserOutlined, DashOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  DashOutlined,
+  EllipsisOutlined,
+} from "@ant-design/icons";
 
 const { SubMenu } = Menu;
 const { Header } = Layout;
@@ -63,7 +67,13 @@ function Nav({ styles, value }) {
           <Dropdown.Button
             overlay={menu}
             placement="bottomCenter"
-            icon={<DashOutlined />}
+            icon={
+              <EllipsisOutlined
+              // style={{
+              //   borderRadius: "9px",
+              // }}
+              />
+            }
             className={clsx(styles.ItemButton)}
           ></Dropdown.Button>
         </div>

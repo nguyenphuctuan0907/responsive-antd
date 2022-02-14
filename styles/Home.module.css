@@ -122,7 +122,6 @@
 
 .content_body {
   margin-bottom: 20px;
-  /* height: 280px; */
 }
 
 .content_body_item {
@@ -157,8 +156,8 @@
   .sider_icon {
     display: inline-block;
     height: 100%;
-    padding: 13px;
     font-size: 1.1rem;
+    position: absolute;
   }
 
   .close {
@@ -173,9 +172,13 @@
     display: block;
   }
 
-  .layout {
-    padding: 0 42px 0 0;
+  .layoutItem {
+    margin-left: 74px;
   }
+
+  /* .layout {
+    padding: 0 42px 0 0;
+  } */
 }
 
 @media (max-width: 1600px) and (min-width: 768px) {
