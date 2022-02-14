@@ -110,7 +110,6 @@
 }
 
 .bodyLeft {
-  /* width: 30%; */
   background-color: red;
 }
 
@@ -158,6 +157,8 @@
     height: 100%;
     font-size: 1.1rem;
     position: absolute;
+    left: 0;
+    top: 73px;
   }
 
   .close {
@@ -175,10 +176,6 @@
   .layoutItem {
     margin-left: 74px;
   }
-
-  /* .layout {
-    padding: 0 42px 0 0;
-  } */
 }
 
 @media (max-width: 1600px) and (min-width: 768px) {

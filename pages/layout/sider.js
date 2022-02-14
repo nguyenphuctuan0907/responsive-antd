@@ -83,7 +83,8 @@ function SiderMain({ styles }) {
           <Button
             type="primary"
             onClick={showDrawer}
-            style={{ margin: "10px" }}
+            // style={{ margin: "10px" }}
+            // className={clsx(styles.button_icon_menu)}
           >
             <MenuOutlined />
           </Button>
