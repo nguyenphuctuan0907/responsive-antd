@@ -1,8 +1,16 @@
 import Link from "next/link";
-import { Layout } from "antd";
 import clsx from "clsx";
+import { useRouter } from "next/router";
 
-import { Menu, Typography, Avatar, Dropdown, Space, message } from "antd";
+import {
+  Menu,
+  Typography,
+  Avatar,
+  Dropdown,
+  Space,
+  message,
+  Layout,
+} from "antd";
 import {
   UserOutlined,
   DashOutlined,
@@ -14,6 +22,8 @@ const { Header } = Layout;
 const { Title } = Typography;
 
 function Nav({ styles, value }) {
+  const router = useRouter();
+
   function handleButtonClick(e) {
     message.info("Click on left button.");
     console.log("click left button", e);
@@ -36,6 +46,7 @@ function Nav({ styles, value }) {
   );
 
   return (
+    // <Provider store={store}>
     <Header className="header">
       <div className={clsx(styles.header_container)}>
         <Title level={4} style={{ color: "white", margin: 0 }}>
@@ -49,11 +60,8 @@ function Nav({ styles, value }) {
           {/* <Menu.Item key="1"> */}
           <div className={clsx(styles.menu_item)}>
             <Link href="/">Dashboard</Link>
-            {/* </Menu.Item> */}
-            {/* <Menu.Item key="2"> */}
             <Link href="/product">Product</Link>
           </div>
-          {/* </Menu.Item> */}
         </Menu>
         <Avatar
           style={{
@@ -67,18 +75,13 @@ function Nav({ styles, value }) {
           <Dropdown.Button
             overlay={menu}
             placement="bottomCenter"
-            icon={
-              <EllipsisOutlined
-              // style={{
-              //   borderRadius: "9px",
-              // }}
-              />
-            }
+            icon={<EllipsisOutlined />}
             className={clsx(styles.ItemButton)}
           ></Dropdown.Button>
         </div>
       </div>
     </Header>
+    // </Provider>
   );
 }
 

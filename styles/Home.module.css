@@ -156,7 +156,8 @@
     display: inline-block;
     height: 100%;
     font-size: 1.1rem;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     left: 0;
     top: 73px;
   }
